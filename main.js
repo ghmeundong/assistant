@@ -1,4 +1,4 @@
-const API_KEY = config.apikey;
+const API_KEY = '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';
 const submitButton = document.querySelector('#submit');
 const outPutElement = document.querySelector('#output');
 
@@ -26,9 +26,7 @@ async function getMessage() {
         body : JSON.stringify({
             model: "gpt-3.5-turbo",
             messages: [{role: "user", content:inputElement.value}],
-            temperature: 2,
-            frequency_penalty: 2,
-            max_tokens: 1024
+            max_tokens: 999
         })
     }
     try{
@@ -75,11 +73,7 @@ function clearOutput () {
     outPutElement.textContent = ''
 }
 
-function clearChat(){
+buttonElement.addEventListener('click',function(){
     historyElement.remove();
     clearOutput();
-}
-
-buttonElement.addEventListener('click',function(){
-    clearChat();
 })
