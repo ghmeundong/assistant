@@ -58,6 +58,9 @@ input {
     rgba(0, 0, 0, 0.05) 0 12px 3px,
     rgba(0, 0, 0, 0.09) 0 -3px 5px
 }
+::placeholder{
+    color:#65667c
+}
 input:focus {
     outline: none;
 }
@@ -90,6 +93,10 @@ button {
     margin: 10px;
     text-align: center;
 }
+#author p {
+    color: #65667c;
+    font-weight: 700;
+}
 .history{
     padding: 10px;
     margin: 10px;
@@ -101,7 +108,12 @@ button {
     color: #65667c;
     cursor: pointer;
 }
-
+.text-gradient{
+    background: -webkit-linear-gradient(-70deg, #330060 0%, #fff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 @media (max-width: 768px) {
     .side-bar{
         display: none !important;
