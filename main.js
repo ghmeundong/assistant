@@ -1,4 +1,5 @@
-const API_KEY = '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';
+require('dotenv').config();
+const API_KEY = process.env.API_KEY;
 const submitButton = document.querySelector('#submit');
 const outPutElement = document.querySelector('#output');
 
