@@ -1,5 +1,4 @@
-//require('dotenv').config();
-const API_KEY = process.env.API_KEY;
+const API_KEY = config.apikey;
 const submitButton = document.querySelector('#submit');
 const outPutElement = document.querySelector('#output');
 
